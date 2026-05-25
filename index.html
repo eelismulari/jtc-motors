@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="fi" class="no-js">
 <head>
+<script>document.documentElement.className="js"</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JTC Motors — BMW-vaihtoautot Tuusulassa</title>
@@ -411,6 +412,12 @@ body.lock .sticky{display:none}
   .logo{font-size:24px}
   .logo .b{font-size:12px}
 }
+
+/* progressive enhancement: show everything if JS is blocked (shared HTML file) */
+.no-js .view{display:block!important}
+.no-js .modal{display:none!important}
+.no-js .searchwrap{margin-top:0}
+.no-js .hero{min-height:auto}
 </style>
 </head>
 <body>

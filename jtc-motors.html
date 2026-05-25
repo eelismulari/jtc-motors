@@ -30,10 +30,9 @@ button{font-family:inherit;cursor:pointer}
 
 .nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);height:74px;display:flex;align-items:center}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;width:100%}
-.logo{font-family:var(--font-display);font-weight:800;font-size:28px;line-height:.8;letter-spacing:.01em;color:var(--text)}
-.logo .top{display:block}
-.logo .b{display:block;font-size:14px;letter-spacing:.2em;font-weight:600;color:var(--text)}
-footer .logo,footer .logo .b{color:#fff}
+.logo{display:inline-flex;align-items:center}
+.logo img{height:36px;width:auto;display:block}
+footer .logo img{height:42px}
 .nav-links{display:flex;gap:30px;list-style:none;margin:0 auto}
 .nav-links a{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--text);padding:6px 0;position:relative}
 .nav-links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--accent);transition:width .25s}
@@ -418,8 +417,7 @@ body.lock .sticky{display:none}
   .eqpill{font-size:12px;padding:6px 12px}
   .car-title,.build-title{font-size:22px}
   .nav-inner{gap:14px}
-  .logo{font-size:24px}
-  .logo .b{font-size:12px}
+  .logo img{height:30px}
 }
 
 /* progressive enhancement: show everything if JS is blocked (shared HTML file) */
@@ -431,7 +429,7 @@ body.lock .sticky{display:none}
 </head>
 <body>
 <nav class="nav"><div class="container nav-inner">
-<a href="#/" class="logo" data-link>JTC<span class="b">MOTORS</span></a>
+<a href="#/" class="logo" data-link><img src="data:image/png;base64,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" alt="JTC Motors"></a>
 <ul class="nav-links" id="navLinks">
 <li><a href="#/showroom" data-link>Showroom</a></li>
 <li><a href="#/palvelut" data-link>Palvelut</a></li>
@@ -780,7 +778,7 @@ body.lock .sticky{display:none}
 <footer><div class="container">
 <div class="foot-top">
 <div class="foot-brand">
-<a href="#/" class="logo" data-link>JTC<span class="b">MOTORS</span></a>
+<a href="#/" class="logo" data-link><img src="data:image/png;base64,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" alt="JTC Motors"></a>
 <p>Tuusulalainen autoliike. Sporttiautot, kustomointi ja rahoitus saman katon alta.</p>
 <div class="socials">
 <a href="https://www.facebook.com/share/1CgsSbWbTg/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>

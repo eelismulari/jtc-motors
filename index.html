@@ -902,7 +902,7 @@ function openModal(cid){
   }
   if(cats.length){reEq();mEqTog.onclick=function(){allEq=!allEq;reEq();};}else{mEq.innerHTML='';mEqTog.style.display='none';}
   gImgs=c.images||[];
-  mThumbs.innerHTML=gImgs.map((s,i)=>'<div class="modal-thumb" data-i="'+i+'" style="background-image:url(''+s+'')"></div>').join('');
+  mThumbs.innerHTML=gImgs.map((s,i)=>`<div class="modal-thumb" data-i="${i}" style="background-image:url('${s}')"></div>`).join('');
   mThumbs.querySelectorAll('.modal-thumb').forEach(function(t){t.addEventListener('click',function(){showImg(parseInt(t.dataset.i));});});
   showImg(0);
   mCalcPrice=c.price; mCalc();

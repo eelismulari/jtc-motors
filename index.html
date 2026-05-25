@@ -359,7 +359,8 @@ body.lock{overflow:hidden}
 body.lock .sticky{display:none}
 @media(max-width:768px){
   .container{padding:0 22px}
-  .sec{padding:58px 0}
+  .sec{padding:50px 0}
+  .sec:first-of-type,.view>.searchwrap+.sec{padding-top:36px}
   .sec-head{margin-bottom:32px}
   .sec-head.row{flex-direction:column;align-items:flex-start;gap:14px}
   .pagehead{padding:46px 0 38px}
@@ -368,7 +369,7 @@ body.lock .sticky{display:none}
   .hero-inner{padding:40px 0}
   .hero h1{font-size:clamp(34px,9vw,52px);margin-bottom:16px}
   .hero p{font-size:16px;margin-bottom:0}
-  .searchwrap{margin-top:-92px;background:transparent}
+  .searchwrap{margin-top:-92px;margin-bottom:30px;background:transparent}
   .searchbar{flex-direction:column;margin:0 auto;border-radius:16px;padding:12px;box-shadow:0 18px 44px rgba(0,0,0,.34)}
   .searchbar select{border:none;border-bottom:1px solid var(--border);border-radius:0;padding:18px 16px;font-size:15px}
   .searchbar select:last-of-type{border-bottom:none}

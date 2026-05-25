@@ -353,6 +353,57 @@ body.lock{overflow:hidden}
 .mcalc-row input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--accent);cursor:pointer;box-shadow:0 0 0 4px var(--accent-soft)}
 .mcalc-row input[type=range]::-moz-range-thumb{width:18px;height:18px;border:none;border-radius:50%;background:var(--accent);cursor:pointer}
 .mcalc-note{font-size:11px;color:var(--text-dim);margin-top:10px}
+
+/* MOBILE-OPT */
+body.lock .sticky{display:none}
+@media(max-width:768px){
+  .container{padding:0 22px}
+  .sec{padding:58px 0}
+  .sec-head{margin-bottom:32px}
+  .sec-head.row{flex-direction:column;align-items:flex-start;gap:14px}
+  .pagehead{padding:46px 0 38px}
+  .pagehead p{font-size:15px}
+  .hero{min-height:72vh}
+  .hero-inner{padding:56px 0}
+  .hero h1{font-size:clamp(32px,9vw,48px)}
+  .hero p{font-size:16px;margin-bottom:30px}
+  .h-sec{font-size:clamp(26px,7.5vw,38px)}
+  .how{padding:30px 26px}
+  .need,.psvc{padding:30px 26px}
+  .calc{padding:28px 22px}
+  .calc-out #calcVal{font-size:46px}
+  .prose p,.prose ul li{font-size:15px}
+  .prose h2{font-size:24px;margin:34px 0 14px}
+  .filterbar{gap:10px}
+  .filterbar select{min-width:0;flex:1 1 100%}
+  .filter-count{margin-left:0;width:100%;margin-top:2px}
+  .myy-contacts{flex-direction:column}
+  .myy-contacts .btn{width:100%;justify-content:center}
+  .callout{padding:30px 24px}
+  .foot-bottom{font-size:11px}
+  /* full-screen modal on phone */
+  .modal-panel{top:0;left:0;transform:none;width:100%;max-height:100vh;min-height:100vh;animation:mfade .3s ease}
+  @keyframes mfade{from{opacity:0}to{opacity:1}}
+  .modal-gal{padding:14px}
+  .modal-mainwrap,.modal-main{min-height:230px}
+  .modal-cont{padding:26px 20px 36px}
+  .modal-title{font-size:32px}
+  .modal-price{font-size:30px}
+  .modal-pricerow{flex-wrap:wrap;gap:8px}
+  .modal-specs{grid-template-columns:1fr 1fr;gap:10px}
+  .modal-ctas{grid-template-columns:1fr}
+  .modal-close{top:12px;right:12px;width:40px;height:40px}
+  .modal-thumb{flex-basis:64px}
+  body{padding-bottom:58px}
+}
+@media(max-width:430px){
+  .modal-specs{grid-template-columns:1fr}
+  .eqpill{font-size:12px;padding:6px 12px}
+  .car-title,.build-title{font-size:22px}
+  .nav-inner{gap:14px}
+  .logo{font-size:24px}
+  .logo .b{font-size:12px}
+}
 </style>
 </head>
 <body>

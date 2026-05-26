@@ -216,7 +216,7 @@ footer{background:var(--dark);color:#fff;padding:72px 0 30px}
 .modal-close svg{width:20px;height:20px}
 .modal-grid{display:grid;grid-template-columns:1.25fr 1fr}
 @media(max-width:980px){.modal-grid{grid-template-columns:1fr}}
-.modal-gal{background:var(--bg-2);padding:28px;display:flex;flex-direction:column;gap:14px}
+.modal-gal{background:var(--bg-2);padding:28px;display:flex;flex-direction:column;gap:14px;min-width:0}
 .modal-mainwrap{position:relative;flex:1;min-height:360px;display:flex}
 .modal-main{flex:1;min-height:360px;background-size:cover;background-position:center;background-color:var(--bg-3);border:1px solid var(--border)}
 .modal-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;background:rgba(255,255,255,.9);border:1px solid var(--border-2);color:var(--text);display:inline-flex;align-items:center;justify-content:center;z-index:3}
@@ -224,10 +224,10 @@ footer{background:var(--dark);color:#fff;padding:72px 0 30px}
 .modal-nav.prev{left:14px}.modal-nav.next{right:14px}
 .modal-nav svg{width:22px;height:22px}
 .modal-count{position:absolute;bottom:14px;right:14px;background:rgba(10,10,10,.7);color:#fff;padding:6px 13px;font-size:12px;font-weight:600;z-index:3}
-.modal-thumbs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}
+.modal-thumbs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;min-width:0}
 .modal-thumb{flex:0 0 84px;aspect-ratio:4/3;background-size:cover;background-position:center;border:1px solid var(--border);cursor:pointer;opacity:.55;transition:opacity .2s,border-color .2s}
 .modal-thumb:hover,.modal-thumb.active{opacity:1;border-color:var(--accent)}
-.modal-cont{padding:44px 40px;display:flex;flex-direction:column}
+.modal-cont{padding:44px 40px;display:flex;flex-direction:column;min-width:0}
 .modal-eye{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-2);margin-bottom:14px}
 .modal-title{font-family:var(--font-display);font-size:46px;font-weight:600;text-transform:uppercase;line-height:1}
 .modal-sub{font-size:14px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.06em;margin:6px 0 22px}

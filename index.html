@@ -203,6 +203,8 @@ footer{background:var(--dark);color:#fff;padding:72px 0 30px}
 .foot-col a:hover{color:#fff}
 .foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:28px;border-top:1px solid rgba(255,255,255,.12);font-size:12px;color:rgba(255,255,255,.45);letter-spacing:.04em}
 @media(max-width:560px){.foot-bottom{flex-direction:column;gap:14px}}
+.foot-bottom-links a{color:rgba(255,255,255,.45);transition:color .2s}
+.foot-bottom-links a:hover{color:#fff}
 
 .modal{position:fixed;inset:0;z-index:1100;display:none}
 .modal.open{display:block}
@@ -306,6 +308,13 @@ body.lock{overflow:hidden}
 .callout h3{font-size:25px;text-transform:uppercase;margin-bottom:14px;color:var(--text)}
 .callout p{font-size:16px;color:var(--text-muted);line-height:1.75}
 .callout strong{color:var(--accent-2)}
+.callout-list{list-style:none;display:grid;gap:11px;margin-top:6px}
+.callout-list li{position:relative;padding-left:26px;font-size:15px;color:var(--text-muted);line-height:1.6}
+.callout-list li::before{content:'';position:absolute;left:0;top:8px;width:14px;height:2px;background:var(--accent-2)}
+.cform h4{font-family:var(--font-display);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--text-dim);margin-top:12px}
+.cform h4:first-child{margin-top:0}
+.cform-check{display:flex;gap:11px;align-items:flex-start;font-size:13px;color:var(--text-muted);line-height:1.5;cursor:pointer}
+.cform-check input{width:18px;height:18px;flex:none;margin-top:1px;accent-color:var(--accent-2)}
 .twocol{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 @media(max-width:760px){.twocol{grid-template-columns:1fr}}
 
@@ -752,29 +761,65 @@ body.lock .sticky{display:none}
 <p>Kaupassa on aina kuluttajansuojalain mukainen vastuu. Sen lisäksi tarjoamme halutessasi erillistä lisäturvaa, jonka sisältö sovitaan autokohtaisesti. Jos jokin jää askarruttamaan kaupan jälkeen, otat yhteyttä ja selvitetään asia.</p>
 </div></section></main>
 <main class="view" data-view="/reklamaatiot">
-<div class="pagehead"><div class="container"><div class="eyebrow">Reklamaatiot</div><h1>Jäikö jokin vaivaamaan?</h1><p>Jos meiltä ostetussa autossa ilmenee vika tai puute kaupanteon jälkeen, ilmoita siitä meille viipymättä. Älä vie autoa korjaamolle, tilaa osia tai teetä korjauksia ennen kuin olet tehnyt reklamaation ja saanut meiltä toimintaohjeet.</p></div></div>
-<section class="sec"><div class="container">
-<div class="contact-grid">
-<div class="prose reveal">
+<div class="pagehead"><div class="container"><div class="eyebrow">Reklamaatiot</div><h1>Ohjeet ja toimintatavat</h1><p>Jos meiltä ostetussa autossa ilmenee vika tai puute kaupanteon jälkeen, ilmoita siitä meille viipymättä. <strong>Älä vie autoa korjaamolle, tilaa osia tai teetä korjauksia ennen kuin olet tehnyt reklamaation ja saanut meiltä toimintaohjeet.</strong> Hätätilanteessa, jos auto ei ole ajokunnossa, ota ensin yhteys omaan vakuutusyhtiöösi.</p></div></div>
+
+<section class="sec"><div class="container prose reveal" style="max-width:880px">
 <h2>Näin toimit</h2>
 <div class="steps">
-<div class="step"><span class="step-n">01</span><div><h3>Ilmoita heti</h3><p>Täytä reklamaatiolomake heti kun huomaat vian. Älä aloita korjauksia tai tilaa osia ennen kuin olet saanut meiltä ohjeet.</p></div></div>
-<div class="step"><span class="step-n">02</span><div><h3>Kuvaa tilanne</h3><p>Kerro auton tiedot, kaupan ajankohta ja mahdollisimman tarkasti mistä on kyse. Kuvat ja videot nopeuttavat selvitystä.</p></div></div>
-<div class="step"><span class="step-n">03</span><div><h3>Saat ohjeet</h3><p>Käymme tilanteen läpi ja ohjaamme tarvittaessa sopivalle korjaamolle. Korjaukset teetetään osoittamassamme paikassa.</p></div></div>
+<div class="step"><span class="step-n">01</span><div><h3>Täytä reklamaatiolomake</h3><p>Täytä lomake huolellisesti heti kun huomaat vian, ennen mahdollisten korjaustöiden aloittamista. Älä tilaa osia tai varaa korjausaikaa ennen ohjeitamme.</p></div></div>
+<div class="step"><span class="step-n">02</span><div><h3>Ohjaamme korjaamolle</h3><p>Käymme tilanteen läpi ja ohjaamme tarvittaessa sopivalle korjaamolle. Korjaukset teetetään osoittamassamme paikassa.</p></div></div>
+<div class="step"><span class="step-n">03</span><div><h3>Elinkaariperiaate</h3><p>Mikäli autossa todetaan virhe, osallistumme korjauskustannuksiin auton iän, ajetut kilometrit ja yleiskunnon huomioivan elinkaarimallin mukaisesti.</p></div></div>
 </div>
-<p>Hätätilanteessa, jos auto ei ole ajokunnossa, ota ensin yhteys omaan vakuutusyhtiöösi. Kuluttajakaupan vastuu pätee aina.</p>
+
+<h2>Virhevastuun peruste</h2>
+<p>Vastuumme määräytyy kuluttajansuojalain, Kilpailu- ja kuluttajaviraston (KKV) ohjeiden sekä kuluttajariitalautakunnan (KRIL) ratkaisukäytännön mukaisesti. Arvioinnissa otetaan huomioon, mitä käytetyltä autolta voidaan kohtuudella odottaa sen iän ja ajokilometrien perusteella.</p>
+<h3 style="font-size:18px;text-transform:none;margin:22px 0 10px">Virheen korjaaminen</h3>
+<p>Ensisijainen tapa hoitaa todettu virhe on korjaus osoittamallamme korjaamolla. Sovimme aina toimenpiteistä kanssasi ennen töiden aloittamista.</p>
+
+<h2>Milloin virhevastuu ei koske autoa</h2>
+<ul>
+<li>Huolto on laiminlyöty kaupan jälkeen tai huoltovälit ylitetty</li>
+<li>Autoon on tehty muutostöitä tai asennuksia ilman lupaa</li>
+<li>Kyse on normaalista kulumisesta, joka vastaa auton ikää ja kilometrejä</li>
+<li>Vika johtuu virheellisestä käytöstä, ylikuormituksesta tai laiminlyönnistä</li>
+</ul>
+</div></section>
+
+<section class="sec sec-2"><div class="container">
+<div class="callout reveal">
+<h3>Yhteenveto asiakkaalle</h3>
+<ul class="callout-list">
+<li>Ilmoita viasta heti ja odota ohjeitamme ennen korjausta</li>
+<li>Älä vie autoa korjaamolle tai tilaa osia omatoimisesti</li>
+<li>Täytä reklamaatiolomake mahdollisimman tarkasti</li>
+<li>Korjaukset teetetään osoittamassamme korjaamossa</li>
+<li>Hätätilanteessa ota ensin yhteys omaan vakuutusyhtiöösi</li>
+</ul>
 </div>
-<div class="reveal">
-<form class="cform" id="reklaForm">
-<div class="row"><input type="text" placeholder="Nimi" required><input type="tel" placeholder="Puhelin" required></div>
-<input type="email" placeholder="Sähköposti" required>
-<input type="text" placeholder="Auto (merkki, malli, rek.nro)">
-<input type="date" aria-label="Kaupan päivämäärä">
-<textarea placeholder="Kuvaa tilanne" required></textarea>
+</div></section>
+
+<section class="sec"><div class="container" style="max-width:880px">
+<div class="sec-head center reveal"><div class="eyebrow">Reklamaatiolomake</div><h2 class="h-sec">Tee reklamaatio</h2></div>
+<form class="cform reveal" id="reklaForm">
+<h4>Mitä asia koskee</h4>
+<select required><option value="">Valitse</option><option>Vika tai puute autossa</option><option>Takuu tai lisäturva</option><option>Muu reklamaatio</option></select>
+<h4>Yhteystiedot</h4>
+<div class="row"><input type="text" placeholder="Nimi" required><input type="email" placeholder="Sähköposti" required></div>
+<div class="row"><input type="tel" placeholder="Puhelin" required><input type="text" placeholder="Osoite"></div>
+<div class="row"><input type="text" placeholder="Postinumero"><input type="text" placeholder="Postitoimipaikka"></div>
+<h4>Auton tiedot</h4>
+<div class="row"><input type="text" placeholder="Rekisterinumero" required><input type="text" placeholder="Vuosimalli"></div>
+<div class="row"><input type="text" placeholder="Mittarilukema ostohetkellä"><input type="text" placeholder="Nykyinen mittarilukema" required></div>
+<h4>Kaupan tiedot</h4>
+<input type="date" aria-label="Ostopäivä">
+<label class="cform-check"><input type="checkbox"><span>Autossa on JTC Motorsin lisäturva</span></label>
+<h4>Kuvaus</h4>
+<textarea placeholder="Kuvaile tapahtuma omin sanoin" required></textarea>
+<label class="file-up"><input type="file" accept="image/*" multiple hidden id="reklaPhotos"><span class="file-up-btn">+ Lisää liitteet (kuvat tai videot)</span><span class="file-up-hint">Enintään 3 liitettä, yhteensä 7 Mt</span></label>
+<label class="cform-check"><input type="checkbox" required><span>Hyväksyn, että tietojani käsitellään reklamaation hoitamiseksi.</span></label>
 <button type="submit">Lähetä reklamaatio</button>
 </form>
-</div>
-</div></div></section></main>
+</div></section></main>
 <footer><div class="container">
 <div class="foot-top">
 <div class="foot-brand">
@@ -791,7 +836,6 @@ body.lock .sticky{display:none}
 <li><a href="#/palvelut" data-link>Palvelut</a></li>
 <li><a href="#/myy-autosi" data-link>Myy autosi</a></li>
 <li><a href="#/toimintatapamme" data-link>Toimintatapamme</a></li>
-<li><a href="#/reklamaatiot" data-link>Reklamaatiot</a></li>
 <li><a href="#/yhteystiedot" data-link>Yhteystiedot</a></li>
 </ul></div>
 <div class="foot-col"><h4>Käynti</h4><ul>
@@ -805,7 +849,7 @@ body.lock .sticky{display:none}
 <li><a href="https://www.tiktok.com/@jtc_motors" target="_blank" rel="noopener">TikTok</a></li>
 </ul></div>
 </div>
-<div class="foot-bottom"><div>© 2026 JTC Motors · Tuusula</div><div>Sporttiautot, customointi ja rahoitus</div></div>
+<div class="foot-bottom"><div>© 2026 JTC Motors · Tuusula</div><div class="foot-bottom-links"><a href="#/reklamaatiot" data-link>Reklamaatiot</a></div></div>
 </div></footer>
 <div class="modal" id="carModal" aria-hidden="true"><div class="modal-bd" data-close></div>
 <div class="modal-panel"><button class="modal-close" data-close aria-label="Sulje"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>

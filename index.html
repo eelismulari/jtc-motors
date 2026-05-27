@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JTC Motors | Sporttiautot Tuusulassa</title>
-<meta name="description" content="JTC Motors, sporttiautoja järkevään hintaan Tuusulassa. Myynti, rahoitus, customointi, maahantuonti ja kotiinkuljetus saman katon alta.">
+<meta name="description" content="JTC Motors, sporttiautoja järkevään hintaan Tuusulassa. Myynti, rahoitus, kustomointi, maahantuonti ja kotiinkuljetus saman katon alta.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -303,6 +303,12 @@ body.lock{overflow:hidden}
 .svc-block-body ul{list-style:none;display:grid;gap:9px}
 .svc-block-body ul li{position:relative;padding-left:22px;font-size:14px;color:var(--text-muted);line-height:1.55}
 .svc-block-body ul li::before{content:'';position:absolute;left:0;top:9px;width:12px;height:2px;background:var(--accent)}
+.svc-more{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-2)}
+.svc-more svg{width:16px;height:16px;transition:transform .2s}
+.svc-more:hover svg{transform:translateX(4px)}
+.page-back{display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dim)}
+.page-back svg{width:15px;height:15px;transform:rotate(180deg)}
+.page-back:hover{color:var(--text)}
 @media(max-width:680px){.svc-block{grid-template-columns:1fr;gap:14px;padding:30px 26px}.svc-block-n{font-size:30px}}
 .callout{background:var(--accent-soft);border:1px solid var(--border);padding:44px 48px;max-width:920px;margin:0 auto}
 .callout h3{font-size:25px;text-transform:uppercase;margin-bottom:14px;color:var(--text)}
@@ -513,7 +519,7 @@ body.lock .sticky{display:none}
 <div class="sec-head center reveal"><div class="eyebrow">Miksi meiltä</div><h2 class="h-sec">Selkeää ja rehellistä</h2></div>
 <div class="how-grid">
 <div class="how reveal"><span class="how-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span><div><h3>Tausta selvitetty</h3><p>Käymme jokaisen auton historian ja tekniikan läpi ennen myyntiä.</p></div></div>
-<div class="how reveal"><span class="how-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><div><h3>Nopeat kustomoinnit</h3><p>CarPlay, vanteet, spoilerit ja tummennukset hoituvat saman katon alta ennen luovutusta.</p></div></div>
+<div class="how reveal"><span class="how-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><div><h3>Kustomoinnit</h3><p>CarPlay, vanteet, spoilerit, madallussarjat ja tummennukset hoituvat saman katon alta ennen luovutusta.</p></div></div>
 <div class="how reveal"><span class="how-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></span><div><h3>Kunto kerrotaan etukäteen</h3><p>Kerromme auton kunnon avoimesti, myös puutteet. Mieluummin etukäteen kuin jälkikäteen.</p></div></div>
 <div class="how reveal"><span class="how-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span><div><h3>Edullisesti liikkeelle</h3><p>Sporttiautoja eri merkeistä, aina järkevään hintaan.</p></div></div>
 </div></div></section>
@@ -524,7 +530,7 @@ body.lock .sticky{display:none}
 <a href="#/palvelut" class="link-top" data-link>Katso kaikki palvelut <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
 <div class="psvc-grid">
 <a class="psvc reveal" href="#/palvelut" data-link><div class="psvc-top"><span class="psvc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20"/></svg></span><span class="psvc-n">01</span></div><h3>Rahoitus</h3><p>Osamaksu joustavalla kuukausierällä. Järjestämme rahoituksen kumppaniemme kautta.</p></a>
-<a class="psvc reveal" href="#/palvelut" data-link><div class="psvc-top"><span class="psvc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.7 2.7-2.3-2.3 2.7-2.7z"/></svg></span><span class="psvc-n">02</span></div><h3>Customointi</h3><p>Vanteet, ohjelmoinnit ja nopeat stailaukset ennen luovutusta.</p></a>
+<a class="psvc reveal" href="#/palvelut" data-link><div class="psvc-top"><span class="psvc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.7 2.7-2.3-2.3 2.7-2.7z"/></svg></span><span class="psvc-n">02</span></div><h3>Kustomointi</h3><p>Vanteet, ohjelmoinnit ja stailaukset ennen luovutusta.</p></a>
 <a class="psvc reveal" href="#/palvelut" data-link><div class="psvc-top"><span class="psvc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></span><span class="psvc-n">03</span></div><h3>Maahantuonti</h3><p>Etsimme ja tuomme haluamasi auton ulkomailta, jos sopivaa ei löydy varastosta.</p></a>
 <a class="psvc reveal" href="#/palvelut" data-link><div class="psvc-top"><span class="psvc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 20 6v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span><span class="psvc-n">04</span></div><h3>Lisäturva</h3><p>Laajennettu turva odottamattomien korjausten varalta. Vaihtoehdot autokohtaisesti.</p></a>
 <a class="psvc reveal" href="#/palvelut" data-link><div class="psvc-top"><span class="psvc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 4h13v12H1z"/><path d="M14 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="17.5" cy="18.5" r="2.5"/></svg></span><span class="psvc-n">05</span></div><h3>Kotiinkuljetus</h3><p>Toimitamme ostetun auton suoraan kotiovellesi, kätevää jos asut kauempana.</p></a>
@@ -609,13 +615,13 @@ body.lock .sticky{display:none}
         </article>
 </div>
 <div class="sr-benefits reveal">
-<div class="srb"><span class="srb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4>Kunto avoimesti</h4><p>Kerromme auton kunnon suoraan, myös puutteet.</p></div></div>
-<div class="srb"><span class="srb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></svg></span><div><h4>Huoltohistoria</h4><p>Auton tausta selvitetty ennen myyntiä.</p></div></div>
+<div class="srb"><span class="srb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4>Kunto avoimesti</h4><p>Kerromme auton kunnon suoraan ja rehellisesti.</p></div></div>
+<div class="srb"><span class="srb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></svg></span><div><h4>Ilmainen CarVertical</h4><p>Jokaiseen autoon saa ilmaisen CarVertical-historiaraportin.</p></div></div>
 <div class="srb"><span class="srb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20"/></svg></span><div><h4>Rahoitus onnistuu</h4><p>Osamaksu joustavalla kuukausierällä.</p></div></div>
 </div>
 </div></section></main>
 <main class="view" data-view="/palvelut">
-<div class="pagehead"><div class="container"><div class="eyebrow">Palvelut</div><h1>Enemmän kuin autokauppa</h1><p>Auton myynnin lisäksi hoidamme rahoituksen, lisäturvat, nopeat muokkaukset, maahantuonnin ja kotiinkuljetuksen saman katon alta Tuusulassa.</p></div></div>
+<div class="pagehead"><div class="container"><div class="eyebrow">Palvelut</div><h1>Enemmän kuin autokauppa</h1><p>Auton myynnin lisäksi hoidamme rahoituksen, lisäturvat, kustomoinnit, maahantuonnin ja kotiinkuljetuksen saman katon alta Tuusulassa.</p></div></div>
 
 <section class="sec"><div class="container">
 <div class="svc-blocks">
@@ -627,15 +633,17 @@ body.lock .sticky{display:none}
 </div></article>
 
 <article class="svc-block reveal"><div class="svc-block-n">02</div><div class="svc-block-body">
-<h2>Customointi ja viritys</h2>
-<p>Hoidamme nopeat stailaukset ja viritykset, joilla auto saadaan haluamaasi kuntoon ripeästi jo ennen luovutusta.</p>
-<ul><li>CarPlay-asennukset</li><li>Spoilerisarjat ja aerot</li><li>Vanteet ja renkaat</li><li>Lasien tummennukset</li></ul>
+<h2>Kustomointi ja viritys</h2>
+<p>Hoidamme stailaukset ja viritykset, joilla auto saadaan juuri haluamaasi kuntoon jo ennen luovutusta.</p>
+<ul><li>CarPlay-asennukset</li><li>Spoilerisarjat ja aerot</li><li>Vanteet ja renkaat</li><li>Madallussarjat</li><li>Lasien tummennukset</li></ul>
+<a class="svc-more" href="#/palvelut/kustomointi" data-link>Lue lisää kustomoinnista <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
 </div></article>
 
 <article class="svc-block reveal"><div class="svc-block-n">03</div><div class="svc-block-body">
 <h2>Maahantuonti</h2>
 <p>Etkö löytänyt sopivaa autoa varastosta? Kerro toiveesi, niin etsimme ja tuomme haluamasi yksilön ulkomailta. Hoidamme tuonnin ja paperit, ja auto on valmiina rekisteröitynä kun saat sen.</p>
 <ul><li>Tuonti Ruotsista ja Saksasta</li><li>Koko prosessi 2–4 viikkoa</li><li>Hinta alkaen 1 900 €</li><li>Hoidamme tuonnin ja rekisteröinnin</li></ul>
+<a class="svc-more" href="#/palvelut/maahantuonti" data-link>Lue lisää maahantuonnista <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
 </div></article>
 
 <article class="svc-block reveal"><div class="svc-block-n">04</div><div class="svc-block-body">
@@ -653,6 +661,7 @@ body.lock .sticky{display:none}
 <h2>Myyntitili</h2>
 <p>Etkö halua myydä autoa suoraan? Jätä se meille myyntitilille, niin markkinoimme ja myymme sen puolestasi.</p>
 <ul><li>Aloitus 199 €: sis. ulko- ja sisäpesun, kuvauksen, ilmoituksen ja some-videon</li><li>Hoidamme markkinoinnin, esittelyt ja kaupanteon</li><li>Myyntitiliasiakkaille kustomoinnit alennettuun hintaan</li></ul>
+<a class="svc-more" href="#/palvelut/myyntitili" data-link>Lue lisää myyntitilistä <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
 </div></article>
 
 </div>
@@ -667,6 +676,70 @@ body.lock .sticky{display:none}
 <a class="btn btn-accent" href="https://wa.me/358451486966" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg> WhatsApp</a>
 </div>
 </div></section>
+</main>
+<main class="view" data-view="/palvelut/kustomointi">
+<div class="pagehead"><div class="container"><a class="page-back" href="#/palvelut" data-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg> Palvelut</a><div class="eyebrow">Kustomointi</div><h1>Auto juuri sun näköiseksi</h1><p>Hoidamme stailaukset ja viritykset saman katon alta, joko valmiiksi ostamaasi autoon tai erikseen tilaustyönä. Sovitaan yhdessä mitä autolle tehdään ja millä aikataululla.</p></div></div>
+<section class="sec"><div class="container prose reveal" style="max-width:880px">
+<h2>Mitä teemme</h2>
+<ul><li>CarPlay- ja multimedia-asennukset</li><li>Vanteet ja renkaat</li><li>Spoilerisarjat ja aerot</li><li>Madallussarjat ja alustatyöt</li><li>Lasien tummennukset</li><li>Ohjelmoinnit ja viritykset</li></ul>
+<h2>Näin se etenee</h2>
+<div class="steps">
+<div class="step"><span class="step-n">01</span><div><h3>Kerro toive</h3><p>Soita tai laita WhatsApp ja kuvaile mitä haet. Katsotaan mikä autoon sopii ja mikä kannattaa.</p></div></div>
+<div class="step"><span class="step-n">02</span><div><h3>Saat tarjouksen</h3><p>Annamme hinta-arvion ja aikataulun työlle. Ei yllätyksiä jälkikäteen.</p></div></div>
+<div class="step"><span class="step-n">03</span><div><h3>Työ tehdään</h3><p>Teemme sovitut työt ja auto luovutetaan valmiina. Kustomoinnit voidaan tehdä myös ostamaasi autoon ennen luovutusta.</p></div></div>
+</div>
+<p>Myyntitiliasiakkaille kustomoinnit onnistuvat alennettuun hintaan.</p>
+</div></section>
+<section class="sec sec-2"><div class="container ig reveal">
+<div class="eyebrow" style="justify-content:center">Kiinnostuitko</div><h2 class="h-sec">Pyydä tarjous kustomoinnista</h2>
+<p>Kerro mitä autollesi haluaisit, niin annamme arvion ja aikataulun.</p>
+<div class="myy-contacts">
+<a class="btn" href="tel:+358451486966"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Soita 045 148 6966</a>
+<a class="btn btn-accent" href="https://wa.me/358451486966?text=Moi%21%20Haluaisin%20kysy%C3%A4%20kustomoinnista%20autooni." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg> WhatsApp</a>
+</div></div></section>
+</main>
+<main class="view" data-view="/palvelut/maahantuonti">
+<div class="pagehead"><div class="container"><a class="page-back" href="#/palvelut" data-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg> Palvelut</a><div class="eyebrow">Maahantuonti</div><h1>Tuomme haluamasi auton</h1><p>Etkö löytänyt sopivaa autoa varastosta? Kerro toiveesi, niin etsimme ja tuomme haluamasi yksilön ulkomailta. Hoidamme tuonnin ja paperit, ja auto on valmiina rekisteröitynä kun saat sen.</p></div></div>
+<section class="sec"><div class="container prose reveal" style="max-width:880px">
+<h2>Mitä saat</h2>
+<ul><li>Tuonti Ruotsista ja Saksasta</li><li>Etsimme toiveidesi mukaisen yksilön</li><li>Hoidamme tuonnin, verot ja rekisteröinnin</li><li>Hinta alkaen 1 900 €</li></ul>
+<h2>Näin se etenee</h2>
+<div class="steps">
+<div class="step"><span class="step-n">01</span><div><h3>Kerro toiveesi</h3><p>Merkki, malli, budjetti ja tärkeimmät toiveet. Mitä tarkemmin kerrot, sen paremmin osumme.</p></div></div>
+<div class="step"><span class="step-n">02</span><div><h3>Etsimme yksilön</h3><p>Käymme tarjonnan läpi ulkomailla ja esitämme sopivat vaihtoehdot sinulle.</p></div></div>
+<div class="step"><span class="step-n">03</span><div><h3>Tuonti ja paperit</h3><p>Hoidamme kuljetuksen, verot ja rekisteröinnin puolestasi. Koko prosessi kestää tyypillisesti 2–4 viikkoa.</p></div></div>
+<div class="step"><span class="step-n">04</span><div><h3>Auto on valmis</h3><p>Saat auton valmiiksi rekisteröitynä ja ajokuntoisena.</p></div></div>
+</div>
+</div></section>
+<section class="sec sec-2"><div class="container ig reveal">
+<div class="eyebrow" style="justify-content:center">Aloita tästä</div><h2 class="h-sec">Kerro mitä etsit</h2>
+<p>Laita viesti toiveistasi, niin lähdetään etsimään.</p>
+<div class="myy-contacts">
+<a class="btn" href="tel:+358451486966"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Soita 045 148 6966</a>
+<a class="btn btn-accent" href="https://wa.me/358451486966?text=Moi%21%20Haluaisin%20kysy%C3%A4%20auton%20maahantuonnista." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg> WhatsApp</a>
+</div></div></section>
+</main>
+<main class="view" data-view="/palvelut/myyntitili">
+<div class="pagehead"><div class="container"><a class="page-back" href="#/palvelut" data-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg> Palvelut</a><div class="eyebrow">Myyntitili</div><h1>Myymme autosi puolestasi</h1><p>Etkö halua myydä autoa itse? Jätä se meille myyntitilille, niin hoidamme markkinoinnin, esittelyt ja kaupanteon. Saat usein paremman hinnan kuin suorassa myynnissä, ilman omaa vaivaa.</p></div></div>
+<section class="sec"><div class="container prose reveal" style="max-width:880px">
+<h2>Mitä aloitus sisältää</h2>
+<p>Aloitusmaksu 199 € kattaa auton valmistelun myyntikuntoon.</p>
+<ul><li>Ulko- ja sisäpesu</li><li>Ammattikuvaus</li><li>Myynti-ilmoituksen laatiminen ja julkaisu</li><li>Some-video autosta</li></ul>
+<h2>Näin se etenee</h2>
+<div class="steps">
+<div class="step"><span class="step-n">01</span><div><h3>Tuo auto meille</h3><p>Sovitaan aika, jolloin tuot auton. Pesemme, kuvaamme ja teemme ilmoituksen.</p></div></div>
+<div class="step"><span class="step-n">02</span><div><h3>Hoidamme myynnin</h3><p>Markkinoimme autoa, vastaamme tiedusteluihin ja hoidamme esittelyt puolestasi.</p></div></div>
+<div class="step"><span class="step-n">03</span><div><h3>Kauppa syntyy</h3><p>Hoidamme kaupanteon ja paperit. Tarvittaessa ostajalle järjestyy rahoitus kauttamme.</p></div></div>
+</div>
+<p>Myyntitiliasiakkaille kustomoinnit onnistuvat alennettuun hintaan.</p>
+</div></section>
+<section class="sec sec-2"><div class="container ig reveal">
+<div class="eyebrow" style="justify-content:center">Aloita tästä</div><h2 class="h-sec">Kysy myyntitilistä</h2>
+<p>Soita tai laita viesti, niin kerromme miten pääset alkuun.</p>
+<div class="myy-contacts">
+<a class="btn" href="tel:+358451486966"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Soita 045 148 6966</a>
+<a class="btn btn-accent" href="https://wa.me/358451486966?text=Moi%21%20Haluaisin%20kysy%C3%A4%20myyntitilist%C3%A4." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg> WhatsApp</a>
+</div></div></section>
 </main>
 <main class="view" data-view="/myy-autosi">
 <div class="pagehead"><div class="container"><div class="eyebrow">Myy autosi</div><h1>Ostamme autosi</h1><p>Lähetä auton tiedot, niin saat reilun arvion nopeasti ja ilman sitoutumista. Ostamme kaikkia hyväkuntoisia merkkejä.</p></div></div>
@@ -685,7 +758,7 @@ body.lock .sticky{display:none}
 <h2>Mitä saat meiltä</h2>
 <div class="steps">
 <div class="step"><span class="step-n">01</span><div><h3>Arvio nopeasti</h3><p>Saat alustavan arvion usein jo samana päivänä. Lähetä tiedot, niin emme jätä sinua roikkumaan.</p></div></div>
-<div class="step"><span class="step-n">02</span><div><h3>Ilman sitoutumista</h3><p>Arvion pyytäminen on maksutonta eikä sido mihinkään. Jos hinta ei miellytä, asia jää siihen.</p></div></div>
+<div class="step"><span class="step-n">02</span><div><h3>Ilman sitoutumista</h3><p>Arvion pyytäminen on maksutonta eikä sido mihinkään.</p></div></div>
 <div class="step"><span class="step-n">03</span><div><h3>Raha nopeasti</h3><p>Kun kaupasta on sovittu, hoidamme maksun ja paperit ripeästi. Et jää odottamaan ostajaa kuukausiksi.</p></div></div>
 </div>
 </div>
@@ -708,7 +781,7 @@ body.lock .sticky{display:none}
 <div class="faq-list reveal">
 <details class="faq-item"><summary>Kuinka nopeasti saan arvion?<span class="faq-ic"></span></summary><div class="faq-a">Yleensä saman päivän aikana, kun lähetät auton tiedot ja muutaman kuvan.</div></details>
 <details class="faq-item"><summary>Pitääkö minun myydä, jos pyydän arvion?<span class="faq-ic"></span></summary><div class="faq-a">Ei tarvitse. Arvio on maksuton eikä sido mihinkään, saat hinnan ja päätät itse.</div></details>
-<details class="faq-item"><summary>Mitä merkkejä ostatte?<span class="faq-ic"></span></summary><div class="faq-a">Kaikkia hyväkuntoisia merkkejä. Kerro auton tiedot, niin annamme arvion.</div></details>
+<details class="faq-item"><summary>Mitä merkkejä ostatte?<span class="faq-ic"></span></summary><div class="faq-a">Pääsääntöisesti saksalaisia merkkejä, mutta kerro auton tiedot, niin katsotaan ja annetaan arvio.</div></details>
 <details class="faq-item"><summary>Otatteko myös paljon ajettuja autoja?<span class="faq-ic"></span></summary><div class="faq-a">Otamme. Kerro rehellisesti kunto ja kilometrit, niin annamme realistisen arvion.</div></details>
 <details class="faq-item"><summary>Milloin saan rahat?<span class="faq-ic"></span></summary><div class="faq-a">Sovimme maksun kaupanteon yhteydessä, ei pitkiä odotusaikoja.</div></details>
 </div>
@@ -726,7 +799,7 @@ body.lock .sticky{display:none}
 </div></section>
 </main>
 <main class="view" data-view="/yhteystiedot">
-<div class="pagehead"><div class="container"><div class="eyebrow">Yhteystiedot</div><h1>Tule käymään</h1><p>Kivijalkamyymälä Huoltotiellä Tuusulassa. Soita, laita WhatsApp tai jätä viesti lomakkeella, niin palaamme asiaan pian.</p></div></div>
+<div class="pagehead"><div class="container"><div class="eyebrow">Yhteystiedot</div><h1>Tule käymään</h1><p>Kivijalkamyymälä Tuusulassa, Huoltotiellä. Soita, laita WhatsApp tai jätä viesti lomakkeella, niin palaamme asiaan pian.</p></div></div>
 <section class="sec"><div class="container">
 <div class="contact-grid">
 <div class="reveal">
@@ -749,16 +822,16 @@ body.lock .sticky{display:none}
 </div>
 </div></div></section></main>
 <main class="view" data-view="/toimintatapamme">
-<div class="pagehead"><div class="container"><div class="eyebrow">Toimintatapamme</div><h1>Palvelun laatu edellä</h1><p>JTC Motors on tuusulalainen autoliike. Pieni porukka, matala kynnys, ei myyntipainetta.</p></div></div>
+<div class="pagehead"><div class="container"><div class="eyebrow">Toimintatapamme</div><h1>Palvelun laatu edellä</h1><p>JTC Motors on tuusulalainen autojen erikoisliike. Emme ole perinteinen autokauppa: saman katon alta hoituvat myynnin lisäksi kustomoinnit, rahoitus ja maahantuonti, eli juuri se mitä moni muu ei edes tarjoa. Pieni porukka, matala kynnys ja ei myyntipainetta.</p></div></div>
 <section class="sec"><div class="container prose reveal">
 <h2>Tunnemme autot</h2>
-<p>Myymme sporttiautoja eri merkeistä, aina järkevään hintaan. Auton myynnin lisäksi hoidamme nopeat kustomoinnit: CarPlay, vanteet, spoilerit ja tummennukset.</p>
+<p>Myymme sporttiautoja eri merkeistä, aina järkevään hintaan. Auton myynnin lisäksi hoidamme kustomoinnit: CarPlay, vanteet, spoilerit, madallussarjat ja tummennukset.</p>
 <h2>Näin se etenee</h2>
 <div class="steps">
 <div class="step"><span class="step-n">01</span><div><h3>Selaa autot</h3><p>Katso varastossa olevat autot ja valitse mikä kiinnostaa. Soita tai jätä WhatsApp, niin otamme yhteyttä pian.</p></div></div>
-<div class="step"><span class="step-n">02</span><div><h3>Tule koeajolle</h3><p>Sovi näyttö Huoltotielle. Autoja voi katsoa, koeajaa ja kysyä rauhassa ilman kiirettä.</p></div></div>
+<div class="step"><span class="step-n">02</span><div><h3>Tule koeajolle</h3><p>Tule Tuusulaan katsomaan autoja, koeaja ja kysy rohkeasti ilman turhaa painetta.</p></div></div>
 <div class="step"><span class="step-n">03</span><div><h3>Sovi kauppa</h3><p>Käymme paperit läpi yhdessä. Tarvittaessa rahoitus järjestyy kumppaniemme kautta.</p></div></div>
-<div class="step"><span class="step-n">04</span><div><h3>Aja kotiin</h3><p>Auto luovutetaan tarkastettuna ja ajokuntoisena viimeistään 7 päivän kuluessa kaupasta.</p></div></div>
+<div class="step"><span class="step-n">04</span><div><h3>Aja kotiin</h3><p>Auto luovutetaan ajokuntoisena ja valmiina ajoon. Jos autoon tehdään kustomointeja, sovitaan luovutusaika niiden mukaan.</p></div></div>
 </div>
 <h2>Avoimesti kunnosta</h2>
 <p>Kerromme auton kunnon kanssasi läpi rehellisesti, myös mahdolliset puutteet. Mieluummin kerromme suoraan kuin selittelemme jälkikäteen. Se on koko homman pohja.</p>
@@ -834,7 +907,7 @@ body.lock .sticky{display:none}
 <div class="foot-top">
 <div class="foot-brand">
 <a href="#/" class="logo" data-link><img src="data:image/png;base64,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" alt="JTC Motors"></a>
-<p>Tuusulalainen autoliike. Sporttiautot, kustomointi ja rahoitus saman katon alta.</p>
+<p>Autojen erikoisliike Tuusulassa. Sporttiautot, kustomoinnit ja rahoitus saman katon alta.</p>
 <div class="socials">
 <a href="https://www.facebook.com/share/1CgsSbWbTg/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
 <a href="https://www.instagram.com/jtc_motors" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
@@ -1008,7 +1081,7 @@ function openModal(cid){
   mPrice.textContent=money(c.price); mMonthly.textContent='alk. '+money(monthly(c.price))+' /kk';
   var ks=[[IC_KM,c.km],[IC_GEAR,c.transmission],[IC_ENG,c.engine_label?c.engine_label+' l':c.engine],[IC_FUEL,c.fuel]].filter(function(x){return x[1];});
   mKeySpecs.innerHTML=ks.map(function(p){return '<div class="mks"><span class="mks-ic">'+p[0]+'</span><span class="mks-v">'+p[1]+'</span></div>';}).join('');
-  var badges=['Sis. ALV'];
+  var badges=['Sis. ALV','Ilmainen CarVertical-raportti'];
   if(c.inspected) badges.push('Katsastettu '+c.inspected);
   badges.push('Kotiinkuljetus saatavilla');
   mBadges.innerHTML=badges.map(function(b){return '<span class="mbadge">'+b+'</span>';}).join('');
